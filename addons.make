@@ -1,2 +1,3 @@
 ofxOrbbecAstra
 ofxOsc
+ofxSpout
