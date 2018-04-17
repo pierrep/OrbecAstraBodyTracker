@@ -1,0 +1,10 @@
+OrbecAstraBodyTracker.qbs.user
+bin/OrbecAstraBodyTracker_debug
+bin/Plugins/
+bin/astra.log
+bin/astra.toml
+bin/libastra.so
+bin/libastra_core.so
+bin/libastra_core_api.so
+obj/
+
