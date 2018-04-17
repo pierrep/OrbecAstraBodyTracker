@@ -33,7 +33,6 @@ where XXXX is one of the names below
     LeftWrist
     RightWrist
     Neck
-    Unknown
 
 Hand Tracking osc messages:
 

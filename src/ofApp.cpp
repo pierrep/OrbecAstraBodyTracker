@@ -50,7 +50,7 @@ void ofApp::draw(){
                 {
                     ofDrawCircle(astra.getJointPosition(i,j),5);
                     ofDrawBitmapString(astra.getJointName(astra.getJointType(i,j)),astra.getJointPosition(i,j)+ofVec2f(10,0));
-                    //sendJointOsc(astra.getJointPosition(i,j),astra.getJointName(astra.getJointType(i,j)));
+                    sendJointOsc(astra.getJointPosition(i,j),astra.getJointName(astra.getJointType(i,j)));
                 }
             }
         }
@@ -71,13 +71,14 @@ void ofApp::draw(){
             ofPopStyle();
         }
 
+
     } else {
         drawSplashScreen();
     }
 }
 
 void ofApp::keyPressed(int key) {
-    if(key == 'b') bDrawBody = !bDrawBody;
+    //if(key == 'b') bDrawBody = !bDrawBody;
 }
 
 void ofApp::loadSettings()
