@@ -1,10 +1,3 @@
-//
-//  ofApp.cpp
-//  example
-//
-//  Created by Pierre Proske on 12/04/17.
-//
-//
 
 #include "ofApp.h"
 
