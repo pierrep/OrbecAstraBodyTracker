@@ -4,6 +4,7 @@ Sends Body and hand tracking via OSC.
 
 Set the port and host details via the settings.xml file.
 
+Make sure to wave each hand in a circle until it connects if you want the separate hand tracking.
 
 
 ## OSC implementation
