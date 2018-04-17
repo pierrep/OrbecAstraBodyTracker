@@ -19,6 +19,7 @@ Project{
 
         of.addons: [
             'ofxOrbbecAstra',
+            'ofxOsc',
         ]
 
         // additional flags for the project. the of module sets some

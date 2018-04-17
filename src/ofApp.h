@@ -10,6 +10,7 @@
 
 #include "ofMain.h"
 #include "ofxOrbbecAstra.h"
+#include "ofxOsc.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,8 +24,19 @@ public:
 
     void setupSplashScreen();
     void drawSplashScreen();
+    void sendJointOsc(ofVec2f pos, string oscAddr);
+    void setupOsc();
+    void loadSettings();
 
 	ofxOrbbecAstra astra;
+
+    ofxOscSender oscSender;
+    string hostname;
+    int port;
+
+    ofXml xml;
+
+    bool bDrawBody;
 
     bool bSetupFinished;
     float curtime, prevtime, maxtime;
