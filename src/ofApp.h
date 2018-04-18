@@ -9,6 +9,10 @@
 #include "ofxSpout.h"
 #endif
 
+#ifdef TARGET_OSX
+#include "ofxSyphon.h"
+#endif
+
 class ofApp : public ofBaseApp{
 
 public:
@@ -25,6 +29,7 @@ public:
     void setupOsc();
     void loadSettings();
 	void setupSpout();
+    void setupSyphon();
 
 	ofxOrbbecAstra astra;
 
@@ -44,4 +49,9 @@ public:
 	/* Spout */
 	ofxSpout::Sender spoutSender;
 #endif
+
+#ifdef TARGET_OSX
+    ofxSyphonServer syphonServer;
+#endif
+    
 };

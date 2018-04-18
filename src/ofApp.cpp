@@ -16,6 +16,7 @@ void ofApp::setup(){
     loadSettings();
     setupOsc();
 	setupSpout();
+    setupSyphon();
     setupSplashScreen();	
 }
 
@@ -40,7 +41,7 @@ void ofApp::draw(){
         ofSetHexColor(0x179EFF);
         astra.drawDepth(0, 0,ofGetWidth(),ofGetHeight());
         ofPopStyle();
-
+#ifndef TARGET_OSX
         if((astra.getNumBodies() > 0) && (bDrawBody)) {
             for(int i = 0; i < astra.getNumBodies();i++) {
                 for(int j = 0; j < astra.getNumJoints(i);j++)
@@ -51,7 +52,7 @@ void ofApp::draw(){
                 }
             }
         }		
-
+#endif
         int hand_count = 0;
         for (auto& hand : astra.getHandsDepth()) {
             auto& pos = hand.second;
@@ -69,6 +70,10 @@ void ofApp::draw(){
 
 #ifdef TARGET_WIN32
 		spoutSender.send(astra.getDepthImage().getTexture());
+#endif
+        
+#ifdef TARGET_OSX
+        syphonServer.publishTexture(&(astra.getDepthImage().getTexture()));
 #endif
     } else {
         drawSplashScreen();
@@ -121,6 +126,13 @@ void ofApp::setupSpout()
 {
 #ifdef TARGET_WIN32
 	spoutSender.init("Orbbec Astra");
+#endif
+}
+
+void ofApp::setupSyphon()
+{
+#ifdef TARGET_OSX
+    syphonServer.setName("Astra Orbbec");
 #endif
 }
 
