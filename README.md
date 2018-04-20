@@ -2,6 +2,8 @@
 
 Sends Body and hand tracking via OSC.
 
+On Windows, sends the depth image via Spout. The MacOS version send the depth image via Syphon.
+
 Set the port and host details via the settings.xml file.
 
 Make sure to wave each hand in a circle until it connects if you want the separate hand tracking.
