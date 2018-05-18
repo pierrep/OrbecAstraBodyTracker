@@ -1,3 +1,4 @@
 ofxOrbbecAstra
 ofxOsc
-ofxSpout
+#ofxSpout
+#ofxSyphon

@@ -36,4 +36,5 @@ bin/opencv_highgui248.dll
 bin/opencv_imgproc248.dll
 bin/opencv_video248.dll
 bin/ssleay32.dll
-
+build
+astra.log
