@@ -6,7 +6,7 @@ void ofApp::setup(){
 	ofSetVerticalSync(true);
     ofSetWindowTitle("SENSORY EMPIRE - Orbbec Astra Body Tracker");
 
-	astra.setup();
+    astra.setup();
    // astra.setLicenseString("<INSERT LICENSE KEY HERE>");
 
 	astra.initDepthStream();
@@ -80,13 +80,16 @@ void ofApp::loadSettings()
 
     bool bOpen = xml.load("settings.xml");
     if(bOpen) {
-        if(xml.exists("//HOSTNAME")) {
-            hostname = xml.getValue<string>("//HOSTNAME");
+
+        auto host = xml.findFirst("//HOSTNAME");
+        if(host) {
+            hostname = host.getValue();
         } else {
             hostname = "localhost";
         }
-        if(xml.exists("//PORT")) {
-            port = xml.getValue<int>("//PORT");
+        auto portnum = xml.findFirst("//PORT");
+        if(portnum) {
+            port = portnum.getIntValue();
         } else {
             port = 66666;
         }
