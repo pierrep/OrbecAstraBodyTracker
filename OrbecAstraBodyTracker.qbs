@@ -37,8 +37,8 @@ Project{
         // eg: this will enable ccache when compiling
         //
         // cpp.compilerWrapper: 'ccache'
-        
-         cpp.rpaths: ["./libs"]
+
+        cpp.rpaths: ["./libs"]
 
         Depends{
             name: "cpp"

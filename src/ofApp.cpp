@@ -4,7 +4,7 @@
 void ofApp::setup(){
     ofBackground(255);
 	ofSetVerticalSync(true);
-    ofSetWindowTitle("SENSORY EMPIRE - Orbbec Astra Body Tracker");
+    ofSetWindowTitle(" Orbbec Astra Body Tracker");
 
     astra.setup();
    // astra.setLicenseString("<INSERT LICENSE KEY HERE>");
@@ -15,13 +15,18 @@ void ofApp::setup(){
 
     loadSettings();
     setupOsc();
-    setupSplashScreen();
+	setupSpout();
+    setupSyphon();
+    setupSplashScreen();	
 }
 
 void ofApp::update(){	
-    if(bSetupFinished) astra.update();
-
-    else {
+	if (bSetupFinished) 
+	{
+		astra.update();
+	}
+    else 
+	{
         curtime = ofGetElapsedTimeMillis();
         if(curtime-prevtime > maxtime) {
             bSetupFinished = true;
@@ -36,7 +41,7 @@ void ofApp::draw(){
         ofSetHexColor(0x179EFF);
         astra.drawDepth(0, 0,ofGetWidth(),ofGetHeight());
         ofPopStyle();
-
+#ifndef TARGET_OSX
         if((astra.getNumBodies() > 0) && (bDrawBody)) {
             for(int i = 0; i < astra.getNumBodies();i++) {
                 for(int j = 0; j < astra.getNumJoints(i);j++)
@@ -46,8 +51,8 @@ void ofApp::draw(){
                     sendJointOsc(astra.getJointPosition(i,j),astra.getJointName(astra.getJointType(i,j)));
                 }
             }
-        }
-
+        }		
+#endif
         int hand_count = 0;
         for (auto& hand : astra.getHandsDepth()) {
             auto& pos = hand.second;
@@ -59,12 +64,17 @@ void ofApp::draw(){
             stringstream ss;
             ss << "id: " << hand.first << endl;
             ss << "pos: " << hand.second;
-            ss << "count: " << hand_count-1;
             ofDrawBitmapStringHighlight(ss.str(), pos.x, pos.y - 30);
             ofPopStyle();
         }
 
-
+#ifdef TARGET_WIN32
+		spoutSender.send(astra.getDepthImage().getTexture());
+#endif
+        
+#ifdef TARGET_OSX
+        syphonServer.publishTexture(&(astra.getDepthImage().getTexture()));
+#endif
     } else {
         drawSplashScreen();
     }
@@ -113,6 +123,20 @@ void ofApp::sendJointOsc(ofVec2f pos, string oscAddr)
     m.addFloatArg(pos.x);
     m.addFloatArg(pos.y);
     oscSender.sendMessage(m, false);
+}
+
+void ofApp::setupSpout()
+{
+#ifdef TARGET_WIN32
+	spoutSender.init("Orbbec Astra");
+#endif
+}
+
+void ofApp::setupSyphon()
+{
+#ifdef TARGET_OSX
+    syphonServer.setName("Astra Orbbec");
+#endif
 }
 
 void ofApp::setupSplashScreen() {

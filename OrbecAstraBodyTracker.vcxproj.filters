@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOrbbecAstra\src\ofxOrbbecAstra.cpp">
+			<Filter>addons\ofxOrbbecAstra\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.cpp">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.cpp">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.cpp">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.cpp">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscSender.cpp">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\src\ofxSpout\Receiver.cpp">
+			<Filter>addons\ofxSpout\src\ofxSpout</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\src\ofxSpout\Sender.cpp">
+			<Filter>addons\ofxSpout\src\ofxSpout</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\src\ofxSpout\Utils.cpp">
+			<Filter>addons\ofxSpout\src\ofxSpout</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutCopy.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutDirectX.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLDXinterop.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLextensions.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutMemoryShare.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutReceiver.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSDK.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSender.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSenderNames.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSharedMemory.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra">
+			<UniqueIdentifier>{E25B5456-13C4-E222-5829-61C8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\src">
+			<UniqueIdentifier>{A4F44E11-18AE-CA21-FA89-7196}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs">
+			<UniqueIdentifier>{14E69909-5246-64C4-934E-5C01}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra">
+			<UniqueIdentifier>{80AEED6D-F4CF-D5CD-6ABA-638A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include">
+			<UniqueIdentifier>{78121DBA-4477-6084-2410-4D6C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra">
+			<UniqueIdentifier>{D421B6F5-A267-0FD0-6EE9-C4A9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra\capi">
+			<UniqueIdentifier>{1BCC9539-4D83-ED1B-0FAA-0DE6}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams">
+			<UniqueIdentifier>{1705F70C-03B5-20FB-0F14-D653}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra\streams">
+			<UniqueIdentifier>{58A3F308-98C1-83CD-BA84-A40A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra_core">
+			<UniqueIdentifier>{B05C9137-313A-95C1-D2F3-6E87}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi">
+			<UniqueIdentifier>{7DD78622-A416-34EC-B1B8-BF48}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins">
+			<UniqueIdentifier>{E80BCB97-FAA6-15CE-0504-7BD1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins">
+			<UniqueIdentifier>{7A2B6084-6508-0909-EDC8-FF5C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\common">
+			<UniqueIdentifier>{E49DB6B8-2393-7D1D-640A-B5B2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\common\clock">
+			<UniqueIdentifier>{B28D2CAB-0EF3-5CC5-74F1-EB3E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOrbbecAstra\libs\astra\include\common\serialization">
+			<UniqueIdentifier>{26819FBB-46F4-50B3-A491-0C9A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc">
+			<UniqueIdentifier>{D91DCA33-6E5D-4481-2AEC-9FBB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc\src">
+			<UniqueIdentifier>{B9DD339A-D93D-92A1-0A2F-4B41}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc\libs">
+			<UniqueIdentifier>{99ECA1D9-873F-4622-8FC0-FC7B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc\libs\oscpack">
+			<UniqueIdentifier>{D3A98534-1602-4FEF-57A6-6593}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc\libs\oscpack\src">
+			<UniqueIdentifier>{BFB5BB47-98C8-BBCB-3066-1046}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc\libs\oscpack\src\ip">
+			<UniqueIdentifier>{5A029128-EB41-95C5-CBC0-CDED}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc\libs\oscpack\src\ip\win32">
+			<UniqueIdentifier>{79DFDFE2-400B-8654-3675-01A3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxOsc\libs\oscpack\src\osc">
+			<UniqueIdentifier>{EDACB89C-9768-9551-4D41-B590}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSpout">
+			<UniqueIdentifier>{F4DD1F4F-E479-F60E-B010-30BD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSpout\src">
+			<UniqueIdentifier>{836FBDC0-375C-97EA-F6ED-9730}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSpout\src\ofxSpout">
+			<UniqueIdentifier>{E7ABD4B0-4F90-69C0-118F-5894}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSpout\libs">
+			<UniqueIdentifier>{7070A9E6-A71C-4358-F0E4-3D28}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSpout\libs\SpoutSDK">
+			<UniqueIdentifier>{DBA8F4A5-5C4B-6BC3-C55A-E264}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSpout\libs\SpoutSDK\src">
+			<UniqueIdentifier>{CC43A1EC-9F74-499A-D230-67A8}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\src\ofxOrbbecAstra.h">
+			<Filter>addons\ofxOrbbecAstra\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Array.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\astra.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra_ctypes.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra_version.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\body_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\body_parameters.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\body_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\colorized_body_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\colorized_body_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\color_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\color_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\depth_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\depth_parameters.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\depth_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\hand_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\hand_parameters.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\hand_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\image_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\image_parameters.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\image_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\infrared_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\infrared_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\masked_color_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\masked_color_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\point_capi.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\point_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\stream_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Matrix3x3.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Body.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Color.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\ColorizedBody.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\DebugHand.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Depth.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Hand.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Image.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Infrared.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\MaskedColor.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Point.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector2f.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector2i.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector3f.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector3i.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\astra_core.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\astra_cxx_make_unique.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_core.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_core_version.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_defines.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_host_events.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_streamservice_proxy.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins\astra_plugin.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins\astra_pluginservice_proxy.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins\astra_plugin_callbacks.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\DataStream.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\Frame.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\FrameListener.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\Plugin.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginBase.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginLogging.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginServiceProxy.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginStream.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\SingleBinStream.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\StreamBin.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\StreamCallbackListener.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\StreamEventHandler.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamDescription.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamReader.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamServiceProxy.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamSet.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra_core</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock\Pulser.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\clock</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock\Stdafx.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\clock</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock\Stopwatch.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\clock</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameInputStream.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\serialization</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameOutputStream.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\serialization</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameStreamReader.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\serialization</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameStreamWriter.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\serialization</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\StreamFileModels.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\common\serialization</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOsc.h">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscArg.h">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.h">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.h">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.h">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.h">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscSender.h">
+			<Filter>addons\ofxOsc\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscException.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h">
+			<Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout\Receiver.h">
+			<Filter>addons\ofxSpout\src\ofxSpout</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout\Sender.h">
+			<Filter>addons\ofxSpout\src\ofxSpout</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout\Utils.h">
+			<Filter>addons\ofxSpout\src\ofxSpout</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout.h">
+			<Filter>addons\ofxSpout\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\Spout.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutCommon.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutCopy.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutDirectX.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLDXinterop.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLextensions.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutMemoryShare.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutReceiver.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSDK.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSender.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSenderNames.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSharedMemory.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>

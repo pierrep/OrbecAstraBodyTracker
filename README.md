@@ -2,12 +2,16 @@
 
 Sends Body and hand tracking via OSC.
 
+On Windows, sends the depth image via Spout. The MacOS version send the depth image via Syphon.
+
 Set the port and host details via the settings.xml file.
 
 Make sure to wave each hand in a circle until it connects if you want the separate hand tracking.
 
 
+
 ## OSC implementation
+The OSC port is 6666 by default and is define in the settings.xml in the data folder of the compiled app.
 
 Body tracking osc messages:
 

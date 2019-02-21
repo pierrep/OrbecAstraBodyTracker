@@ -5,6 +5,14 @@
 #include "ofxOrbbecAstra.h"
 #include "ofxOsc.h"
 
+#ifdef TARGET_WIN32
+#include "ofxSpout.h"
+#endif
+
+#ifdef TARGET_OSX
+#include "ofxSyphon.h"
+#endif
+
 class ofApp : public ofBaseApp{
 
 public:
@@ -20,6 +28,8 @@ public:
     void sendJointOsc(ofVec2f pos, string oscAddr);
     void setupOsc();
     void loadSettings();
+	void setupSpout();
+    void setupSyphon();
 
 	ofxOrbbecAstra astra;
 
@@ -35,4 +45,13 @@ public:
     float curtime, prevtime, maxtime;
     ofTrueTypeFont font,font2;
 
+#ifdef TARGET_WIN32
+	/* Spout */
+	ofxSpout::Sender spoutSender;
+#endif
+
+#ifdef TARGET_OSX
+    ofxSyphonServer syphonServer;
+#endif
+    
 };

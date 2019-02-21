@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>OrbecAstraBodyTracker</RootNamespace>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOrbbecAstra\libs;..\..\..\addons\ofxOrbbecAstra\libs\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32\Plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64\Plugins;..\..\..\addons\ofxOrbbecAstra\src;..\..\..\addons\ofxOsc\libs;..\..\..\addons\ofxOsc\libs\oscpack;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxSpout\libs;..\..\..\addons\ofxSpout\libs\SpoutSDK;..\..\..\addons\ofxSpout\libs\SpoutSDK\src;..\..\..\addons\ofxSpout\src;..\..\..\addons\ofxSpout\src\ofxSpout</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);Astra.lib;astra_core.lib;astra_core_api.lib;openni_sensor.lib;orbbec_hand.lib;orbbec_xs.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32\Plugins</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOrbbecAstra\libs;..\..\..\addons\ofxOrbbecAstra\libs\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32\Plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64\Plugins;..\..\..\addons\ofxOrbbecAstra\src;..\..\..\addons\ofxOsc\libs;..\..\..\addons\ofxOsc\libs\oscpack;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxSpout\libs;..\..\..\addons\ofxSpout\libs\SpoutSDK;..\..\..\addons\ofxSpout\libs\SpoutSDK\src;..\..\..\addons\ofxSpout\src;..\..\..\addons\ofxSpout\src\ofxSpout</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);Astra.lib;astra_core.lib;astra_core_api.lib;openni_sensor.lib;orbbec_hand.lib;orbbec_xs.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64\Plugins</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOrbbecAstra\libs;..\..\..\addons\ofxOrbbecAstra\libs\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32\Plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64\Plugins;..\..\..\addons\ofxOrbbecAstra\src;..\..\..\addons\ofxOsc\libs;..\..\..\addons\ofxOsc\libs\oscpack;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxSpout\libs;..\..\..\addons\ofxSpout\libs\SpoutSDK;..\..\..\addons\ofxSpout\libs\SpoutSDK\src;..\..\..\addons\ofxSpout\src;..\..\..\addons\ofxSpout\src\ofxSpout</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);Astra.lib;astra_core.lib;astra_core_api.lib;openni_sensor.lib;orbbec_hand.lib;orbbec_xs.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32\Plugins</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOrbbecAstra\libs;..\..\..\addons\ofxOrbbecAstra\libs\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock;..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\Win32\Plugins;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64\Plugins;..\..\..\addons\ofxOrbbecAstra\src;..\..\..\addons\ofxOsc\libs;..\..\..\addons\ofxOsc\libs\oscpack;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxSpout\libs;..\..\..\addons\ofxSpout\libs\SpoutSDK;..\..\..\addons\ofxSpout\libs\SpoutSDK\src;..\..\..\addons\ofxSpout\src;..\..\..\addons\ofxSpout\src\ofxSpout</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);Astra.lib;astra_core.lib;astra_core_api.lib;openni_sensor.lib;orbbec_hand.lib;orbbec_xs.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64;..\..\..\addons\ofxOrbbecAstra\libs\astra\lib\vs\x64\Plugins</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="src\main.cpp" />
+		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOrbbecAstra\src\ofxOrbbecAstra.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscSender.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\src\ofxSpout\Receiver.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\src\ofxSpout\Sender.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\src\ofxSpout\Utils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutCopy.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutDirectX.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLDXinterop.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLextensions.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutMemoryShare.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutReceiver.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSDK.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSender.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSenderNames.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSharedMemory.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\src\ofxOrbbecAstra.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Array.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\astra.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra_ctypes.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra_version.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\body_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\body_parameters.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\body_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\colorized_body_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\colorized_body_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\color_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\color_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\depth_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\depth_parameters.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\depth_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\hand_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\hand_parameters.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\hand_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\image_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\image_parameters.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\image_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\infrared_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\infrared_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\masked_color_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\masked_color_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\point_capi.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\point_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\stream_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Matrix3x3.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Body.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Color.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\ColorizedBody.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\DebugHand.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Depth.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Hand.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Image.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Infrared.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\MaskedColor.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\streams\Point.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector2f.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector2i.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector3f.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Vector3i.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\astra_core.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\astra_cxx_make_unique.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_core.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_core_version.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_defines.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_host_events.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_streamservice_proxy.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\astra_types.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins\astra_plugin.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins\astra_pluginservice_proxy.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\capi\plugins\astra_plugin_callbacks.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\DataStream.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\Frame.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\FrameListener.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\Plugin.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginBase.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginLogging.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginServiceProxy.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\PluginStream.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\SingleBinStream.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\StreamBin.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\StreamCallbackListener.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\plugins\StreamEventHandler.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamDescription.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamReader.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamServiceProxy.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra_core\StreamSet.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock\Pulser.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock\Stdafx.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\clock\Stopwatch.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameInputStream.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameOutputStream.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameStreamReader.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\FrameStreamWriter.h" />
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\common\serialization\StreamFileModels.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOsc.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscArg.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscSender.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscException.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h" />
+		<ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout\Receiver.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout\Sender.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout\Utils.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\src\ofxSpout.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\Spout.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutCommon.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutCopy.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutDirectX.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLDXinterop.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLextensions.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutMemoryShare.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutReceiver.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSDK.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSender.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSenderNames.h" />
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSharedMemory.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+			<Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc">
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties RESOURCE_FILE="icon.rc" />
+		</VisualStudio>
+	</ProjectExtensions>
+</Project>
