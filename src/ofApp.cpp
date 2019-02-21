@@ -90,19 +90,36 @@ void ofApp::loadSettings()
 
     bool bOpen = xml.load("settings.xml");
     if(bOpen) {
+#if OF_VERSION_MAJOR == 0 && OF_VERSION_MINOR == 9 && OF_VERSION_PATCH == 8
 
-        auto host = xml.findFirst("//HOSTNAME");
-        if(host) {
-            hostname = host.getValue();
-        } else {
-            hostname = "localhost";
-        }
-        auto portnum = xml.findFirst("//PORT");
-        if(portnum) {
-            port = portnum.getIntValue();
-        } else {
-            port = 66666;
-        }
+		if (xml.exists("//HOSTNAME")) {
+			hostname = xml.getValue<string>("//HOSTNAME");
+		}
+		else {
+			hostname = "localhost";
+		}
+		if (xml.exists("//PORT")) {
+			port = xml.getValue<int>("//PORT");
+		}
+		else {
+			port = 66666;
+		}
+#else
+		auto host = xml.findFirst("//HOSTNAME");
+		if (host) {
+			hostname = host.getValue();
+		}
+		else {
+			hostname = "localhost";
+		}
+		auto portnum = xml.findFirst("//PORT");
+		if (portnum) {
+			port = portnum.getIntValue();
+		}
+		else {
+			port = 66666;
+		}
+#endif
 
     } else {
         hostname = "localhost";
