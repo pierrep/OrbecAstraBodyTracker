@@ -56,7 +56,9 @@ void ofApp::draw(){
         int hand_count = 0;
         for (auto& hand : astra.getHandsDepth()) {
             auto& pos = hand.second;
-            sendJointOsc(ofVec2f(hand.second.x/ofGetWidth(),hand.second.y/ofGetHeight()),ofToString(hand_count++));
+            pos.x = pos.x * (ofGetWidth() / astra.getCameraWidth());
+            pos.y = pos.y * (ofGetHeight() / astra.getCameraHeight());
+            sendJointOsc(ofVec2f(hand.second.x/astra.getCameraWidth(),hand.second.y/astra.getCameraHeight()),ofToString(hand_count++));
             ofPushStyle();
             ofSetColor(ofColor::red);
             ofDrawCircle(pos, 10);

@@ -1,11 +1,16 @@
 OrbecAstraBodyTracker.qbs.user
 bin/OrbecAstraBodyTracker_debug
+bin/OrbecAstraBodyTracker
 bin/Plugins/
 bin/astra.log
 bin/astra.toml
 bin/libastra.so
 bin/libastra_core.so
 bin/libastra_core_api.so
+bin/libs/Plugins/
+bin/libs/libastra.so
+bin/libs/libastra_core.so
+bin/libs/libastra_core_api.so
 obj/
 .vs/
 OrbecAstraBodyTracker.VC.opendb
