@@ -52,3 +52,5 @@ bin/orbbec.ini
 
 build
 astra.log
+
+binaries/OrbecAstraBodyTrackerWin32/
