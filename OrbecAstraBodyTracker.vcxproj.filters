@@ -7,6 +7,12 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
 		<ClCompile Include="..\..\..\addons\ofxOrbbecAstra\src\ofxOrbbecAstra.cpp">
 			<Filter>addons\ofxOrbbecAstra\src</Filter>
 		</ClCompile>
@@ -61,6 +67,9 @@
 		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutDirectX.cpp">
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutFrameCount.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
 		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLDXinterop.cpp">
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClCompile>
@@ -83,6 +92,9 @@
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClCompile>
 		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSharedMemory.cpp">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutUtils.cpp">
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClCompile>
 	</ItemGroup>
@@ -188,6 +200,9 @@
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\src\ofxOrbbecAstra.h">
 			<Filter>addons\ofxOrbbecAstra\src</Filter>
 		</ClInclude>
@@ -201,6 +216,9 @@
 			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra_ctypes.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra_device_control.h">
 			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\astra_version.h">
@@ -225,6 +243,9 @@
 			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\color_types.h">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\data_rotate.h">
 			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\depth_capi.h">
@@ -274,6 +295,9 @@
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams\stream_types.h">
 			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra\capi\streams</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\DeviceController.hpp">
+			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxOrbbecAstra\libs\astra\include\astra\Matrix3x3.hpp">
 			<Filter>addons\ofxOrbbecAstra\libs\astra\include\astra</Filter>
@@ -512,6 +536,9 @@
 		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutDirectX.h">
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutFrameCount.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutGLDXinterop.h">
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClInclude>
@@ -534,6 +561,9 @@
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutSharedMemory.h">
+			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSpout\libs\SpoutSDK\src\SpoutUtils.h">
 			<Filter>addons\ofxSpout\libs\SpoutSDK\src</Filter>
 		</ClInclude>
 	</ItemGroup>
