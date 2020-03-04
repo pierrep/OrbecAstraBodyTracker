@@ -8,10 +8,15 @@ Set the port and host details via the settings.xml file.
 
 Make sure to wave each hand in a circle until it connects if you want the separate hand tracking.
 
+## Building from source
 
+The following addons are needed when building from source:
+- Linux (none, no Spout or Syphon support)
+- Windows: Spout https://github.com/elliotwoods/ofxSpout
+- Mac OS: Syphon https://github.com/astellato/ofxSyphon
 
 ## OSC implementation
-The OSC port is 6666 by default and is define in the settings.xml in the data folder of the compiled app.
+The OSC port is 66666 by default and is defined in the settings.xml in the data folder of the compiled app.
 
 Body tracking osc messages:
 
